@@ -1,0 +1,20 @@
+{
+  "name": "project-node-budget",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:elizeu-vasconcelos1992/project-node-budget.git",
+  "author": "<elizeucosta21@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.11.19",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
