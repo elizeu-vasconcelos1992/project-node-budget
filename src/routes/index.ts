@@ -1,8 +1,9 @@
 import { Router } from "express";
-import listUsersControllers from "../controllers";
+import { listProductsControllers, listUsersControllers } from "../controllers";
 
-const usersRoutes = Router();
+const routes = Router();
 
-usersRoutes.get("", listUsersControllers);
+routes.get("/users", listUsersControllers);
+routes.get("/products", listProductsControllers);
 
-export default usersRoutes;
+export default routes;
