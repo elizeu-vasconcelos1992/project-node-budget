@@ -1,3 +1,4 @@
+import { AxiosError } from "axios";
 import { Request, Response, NextFunction } from "express";
 
 export class AppError extends Error {
@@ -25,4 +26,14 @@ export default async function checkErrors(
   return res.status(500).json({
     message: "Internal server error",
   });
+}
+
+export function handleErrors(error: AxiosError | any) {
+  if (error instanceof AxiosError) {
+    if (error.response?.status) {
+      throw new AppError(error.message, error.response?.status);
+    }
+    throw new AppError(error.message);
+  }
+  throw new AppError("An unexpected error occurred");
 }
