@@ -1,13 +1,13 @@
 import "express-async-errors";
 import express from "express";
-import usersRoutes from "./routes";
 import checkErrors from "./errors";
+import routes from "./routes";
 
 const app = express();
 
 app.use(express.json());
 
-app.use("/users", usersRoutes);
+app.use(routes);
 app.use(checkErrors);
 
 app.listen(3000, () => {
