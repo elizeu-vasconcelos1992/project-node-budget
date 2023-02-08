@@ -9,3 +9,8 @@ export type Product = {
   name: string;
   price: number;
 };
+
+export type BudgetRequest = {
+  user: Pick<User, "id">;
+  products: Pick<Product, "id">[];
+};
