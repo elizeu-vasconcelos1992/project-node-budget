@@ -11,6 +11,6 @@ export type Product = {
 };
 
 export type BudgetRequest = {
-  user: Pick<User, "id">;
-  products: Pick<Product, "id">[];
+  userId: Pick<User, "id">;
+  productsId: Pick<Product, "id">[];
 };
