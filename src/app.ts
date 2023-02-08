@@ -10,6 +10,4 @@ app.use(express.json());
 app.use(routes);
 app.use(checkErrors);
 
-app.listen(3000, () => {
-  console.log("Servidor executando");
-});
+export default app;
