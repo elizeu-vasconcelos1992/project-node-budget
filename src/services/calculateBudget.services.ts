@@ -5,11 +5,11 @@ import api from "./api";
 export default async function calculateBudgetServices(
   data: BudgetRequest
 ): Promise<number> {
-  const user: User = await api(`/users/${data.user}`)
+  const user: User = await api(`/users/${data.userId}`)
     .then(res => res.data)
     .catch(error => handleErrors(error));
 
-  const response = data.products.map(async (id: any) => {
+  const response = data.productsId.map(async (id: any) => {
     const res = await api(`/products/${id}`)
       .then(res => res.data)
       .catch(error => handleErrors(error));
@@ -23,5 +23,5 @@ export default async function calculateBudgetServices(
     0
   );
 
-  return budget;
+  return +budget.toFixed(2);
 }
