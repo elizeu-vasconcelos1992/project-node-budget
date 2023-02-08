@@ -17,5 +17,5 @@ export async function listProductsControllers(req: Request, res: Response) {
 export async function createBudgetControllers(req: Request, res: Response) {
   const data: BudgetRequest = req.body;
   const budget = await calculateBudgetServices(data);
-  return res.status(200).json({ value: budget });
+  return res.status(201).json({ value: budget });
 }
