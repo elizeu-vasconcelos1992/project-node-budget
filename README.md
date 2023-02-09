@@ -450,5 +450,6 @@ npm run test ./src/__tests__/services/calculateBudget.spec.ts
 <li>YUP</li>
 <li>AXIOS</li>
 <li>EXPRESS-ASYNC-ERRORS</li>
+<li>SWAGGER-UI-EXPRESS</li>
 <li>TESTES COM JEST</li>
 </ul>
