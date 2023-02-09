@@ -275,7 +275,7 @@ Caso tudo dê certo, a resposta será assim:
 
 <br>
 
-<p style="text-align: justify">Para executar a aplicação é preciso baixá-la ou realizar um clone para seu computador, certifique-se na fazer isso a partir da branch "main". Antes de rodar a aplicação é preciso ter o Node instalado na máquina e também um gerenciador de pacotes, como o npm ou yarn.</p>
+<p style="text-align: justify">Para executar a aplicação é preciso baixá-la ou realizar um clone para seu computador, certifique-se de fazer isso a partir da branch "main". Antes de rodar a aplicação é preciso ter o Node instalado na máquina e também um gerenciador de pacotes, como o npm ou yarn.</p>
 
 <br>
 
