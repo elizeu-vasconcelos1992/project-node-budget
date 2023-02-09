@@ -319,7 +319,7 @@ npm run dev
 
 <br>
 
-<p style="text-align: justify">Se os passos de instalação e execução deveram certo, provalvelmente terá uma mensagem terminal com o dizer "Servidor executando". Por padrão, ele será executado na porta 3000, utilize o endereço <a href="http://localhost:3000">http://localhost:3000</a> como base para utilizar os endpoints da aplicação. É recomendável utilizá-la a partir de algum software para teste de API Cliente, como o <a href="https://insomnia.rest/download">Insomnia</a>. Alternativamente, você pode utilizar a aplicação a partir da documentação swagger embutida no código.</p>
+<p style="text-align: justify">Se os passos de instalação e execução deveram certo, provavelmente existirá uma mensagem no terminal com o dizer "Servidor executando". Por padrão, ele será executado na porta 3000, utilize o endereço <a href="http://localhost:3000">http://localhost:3000</a> como url base para utilizar os endpoints da aplicação. É recomendável utilizá-la a partir de algum software para teste de API Cliente, como o <a href="https://insomnia.rest/download">Insomnia</a>. Alternativamente, você pode utilizar a aplicação a partir da documentação swagger embutida no código.</p>
 
 <br>
 
