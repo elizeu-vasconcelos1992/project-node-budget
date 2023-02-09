@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Middleware de Orçamentos",
+    "description": "O Middleware de Orçamentos é uma aplicação NODE que tem o objetivo principal de intermediar o consumo de um mockend que contém informações sobre usuários e produtos e, a partir dessas informações, retornar um orçamento baseado na taxa que o usuário pagará sobre determinado(s) produto(s). Também, a aplicação é capaz de listar os usuários e produtos existentes no mockend.",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "paths": {
+    "/users": {
+      "get": {
+        "description": "Rota que lista usuários do mockend",
+        "tags": ["Users"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "description": "Rota que lista produtos do mockend",
+        "tags": ["Products"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/budget": {
+      "post": {
+        "description": "Rota que cria um orçamento",
+        "tags": ["Budget"],
+        "responses": {
+          "201": {
+            "description": "CREATE"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "number"
+                  },
+                  "productsId": {
+                    "type": "number"
+                  }
+                },
+                "example": {
+                  "userId": 1,
+                  "productsId": [1, 2, 3]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

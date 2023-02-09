@@ -108,7 +108,7 @@ Caso tudo dê certo, a resposta será assim:
 
 <br>
 
-<p style="text-align: justify">As rotas que que utilizam o verbo HTTP GET apresentam alguns tratamentos de erros baseados nos tipos de problemas que ocorrem durante a requisição e/ou resposta. Esses erros são tratados automaticamente e de maneira genérica a partir das respostas do servidor e do cliente que são instâncias da <a href="https://axios-http.com/docs/handling_errors"><strong>API AxiosError</strong></a>. Caso o problema não seja instância dessa API, o erro é apresentado da seguinte forma:   </p>
+<p style="text-align: justify">As rotas que utilizam o verbo HTTP GET apresentam alguns tratamentos de erros baseados nos tipos de problemas que ocorrem durante a requisição e/ou resposta. Esses erros são tratados automaticamente e de maneira genérica a partir das respostas do servidor e do cliente que são instâncias da <a href="https://axios-http.com/docs/handling_errors"><strong>API AxiosError</strong></a>. Caso o problema não seja instância dessa API, o erro é apresentado da seguinte forma:   </p>
 
 <br>
 
@@ -319,7 +319,11 @@ npm run dev
 
 <br>
 
-<p style="text-align: justify">Se os passos de instalação e execução deveram certo, provalvelmente terá uma mensagem terminal com o dizer "Servidor executando". Por padrão, ele será executado na porta 3000, utilize o endereço <a href="http://localhost:3000">http://localhost:3000</a> como base para utilizar os endpoints da aplicação. É recomendável utilizá-la a partir de algum software para teste de API Cliente, como o <a href="https://insomnia.rest/download">Insomnia</a>.</p>
+<p style="text-align: justify">Se os passos de instalação e execução deveram certo, provalvelmente terá uma mensagem terminal com o dizer "Servidor executando". Por padrão, ele será executado na porta 3000, utilize o endereço <a href="http://localhost:3000">http://localhost:3000</a> como base para utilizar os endpoints da aplicação. É recomendável utilizá-la a partir de algum software para teste de API Cliente, como o <a href="https://insomnia.rest/download">Insomnia</a>. Alternativamente, você pode utilizar a aplicação a partir da documentação swagger embutida no código.</p>
+
+<br>
+
+## ▪️ Utilizando com Insomnia
 
 <br>
 
@@ -349,6 +353,24 @@ npm run dev
 
 <div style="display:flex; justify-content:center">
 <img width="80%" src="./src/assets/ex_3.gif">
+</div>
+
+<br>
+
+## ▪️ Utilizando com Swagger
+
+<br>
+
+<p>O documento swagger é um recurso que lista as rotas disponíveis numa aplicação, com a possibilidade de testá-las diretamente pelo navegador. Com o servidor em execução, visite o seguinte endereço: <a href="http://localhost:3000/api-doc/">http://localhost:3000/api-doc/</a></p>
+
+<br>
+
+### ▪️ Exemplo utilizando os três endpoints com swagger
+
+<br>
+
+<div style="display:flex; justify-content:center">
+<img width="80%" src="./src/assets/ex_4.gif">
 </div>
 
 <br>
