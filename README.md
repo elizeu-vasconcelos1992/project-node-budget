@@ -108,7 +108,7 @@ Caso tudo dê certo, a resposta será assim:
 
 <br>
 
-<p style="text-align: justify">As rotas que que utilizam o verbo HTTP GET apresentam alguns tratamentos de erros baseados nos tipos de problemas que ocorrem durante a requisição e/ou resposta. Esses erros são tratados automaticamente e de maneira genérica a partir das respostas do servidor e do cliente que são instâncias da <a href="https://axios-http.com/docs/handling_errors"><strong>API AxiosError</strong></a>. Caso o problema não seja instância dessa API, o erro é apresentado da seguinte forma:   </p>
+<p style="text-align: justify">As rotas que utilizam o verbo HTTP GET apresentam alguns tratamentos de erros baseados nos tipos de problemas que ocorrem durante a requisição e/ou resposta. Esses erros são tratados automaticamente e de maneira genérica a partir das respostas do servidor e do cliente que são instâncias da <a href="https://axios-http.com/docs/handling_errors"><strong>API AxiosError</strong></a>. Caso o problema não seja instância dessa API, o erro é apresentado da seguinte forma:   </p>
 
 <br>
 
